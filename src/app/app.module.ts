@@ -6,12 +6,14 @@ import { ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NameEditorComponent } from './name-editor/name-editor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     //add it here
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NameEditorComponent
   ],
   imports: [
     BrowserModule,
