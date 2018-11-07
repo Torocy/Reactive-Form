@@ -11,9 +11,23 @@ export class ProfileEditorComponent  {
   profileForm = new FormGroup({
     //iniytialize the constructor by providing objects
     firstName : new FormControl(''),
-    lastName : new FormControl('')
-  });
+    lastName : new FormControl(''),
+    //nested form group
+    address  :new FormGroup({
+        street: new FormControl(''),
+        city: new FormControl(''),
+        state: new FormControl(''),
+        zip: new FormControl('')
 
+
+
+
+  })
+
+
+    
+  });
+  
   onSubmit(){
     //Use EventEmitter with form value
     console.warn(this.profileForm.value);
