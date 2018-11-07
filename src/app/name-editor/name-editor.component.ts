@@ -7,13 +7,10 @@ import { FormControl} from '@angular/forms';
   templateUrl: './name-editor.component.html',
   styleUrls: ['./name-editor.component.css']
 })
-export class NameEditorComponent implements OnInit {
+export class NameEditorComponent {
   //create a new instance of the form control
   name = new FormControl('');
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  
 
 }

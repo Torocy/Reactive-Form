@@ -11,12 +11,12 @@ import { NameEditorComponent } from './name-editor/name-editor.component';
 @NgModule({
   declarations: [
     AppComponent,
-    //add it here
-    ReactiveFormsModule,
     NameEditorComponent
   ],
   imports: [
     BrowserModule,
+    //add it here
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
