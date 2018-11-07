@@ -11,6 +11,7 @@ export class NameEditorComponent {
   //create a new instance of the form control
   name = new FormControl('');
 
+  // a method that updates the value of the control to Torocy
   updateName() {
     this.name.setValue('Torocy');
   }
