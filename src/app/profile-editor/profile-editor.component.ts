@@ -18,15 +18,18 @@ export class ProfileEditorComponent  {
         city: new FormControl(''),
         state: new FormControl(''),
         zip: new FormControl('')
+      })
+});
 
+updateProfile() {
+  this.profileForm.patchValue({
+    firstName:'Torocy',
+    address: {
+      street: 'sumba Road'
+    }
 
-
-
-  })
-
-
-    
   });
+}
   
   onSubmit(){
     //Use EventEmitter with form value
