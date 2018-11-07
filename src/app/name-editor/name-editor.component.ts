@@ -11,6 +11,10 @@ export class NameEditorComponent {
   //create a new instance of the form control
   name = new FormControl('');
 
+  updateName() {
+    this.name.setValue('Torocy');
+  }
+
   
 
 }
